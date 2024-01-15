@@ -1,12 +1,14 @@
 function greeting() {
-    window.alert("Hello there my friend!")
+    alert("Hello there my friend!")
 }
 
+// takes in the argument "John Doe" from index.html and passes it to the fn
 function greetingWithName(userName) {
-    window.alert(`Hello there my friend! You must be ${userName}!`)
+    alert(`Hello there my friend! You must be ${userName}!`)
 }
 
-function addTwoNumbers(firstNr, secondNr) {
-    const result = firstNr + secondNr
-    console.log("The sum is: ", result)
+// takes in the arguments 2 & 6 from index.html and passes it to the fn
+function addTwoNumbers(x, y) { 
+    const sum = x + y
+    console.log("The sum of", x, "and", y, "is: ", sum)
 }
