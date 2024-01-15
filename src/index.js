@@ -81,3 +81,9 @@ function convertTemp(tempInC) {
     const approxTempF = Math.floor(tempInF)
     console.log(`${tempInC} degrees Celsius is approximately ${approxTempF} degrees Fahrenheit.`)
 }
+
+function calculateMeanValue(values) {
+    const sum = values.reduce((accum, current) => accum + current, 0)
+    const mean = sum / values.length
+    console.log(`The mean value of ${values} is ${mean}.`)
+}
