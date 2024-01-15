@@ -33,3 +33,17 @@ function divideTwoNumbers(x, y) {
     }
     console.log(`${x} divided by ${y} is ${x / y}`)
 }
+
+function findAreaPrompt() {
+    const x = prompt("Enter the length of the horizontal side in meters.", "0")
+    const y = prompt("Enter the length of the vertical side in meters.", "0")
+    if(isNaN(x) || isNaN(y)) {
+        console.log("The lengths must be numbers!")
+        return;
+    }
+    findArea(x, y)
+}
+
+function findArea(x, y) {
+    console.log(`The area of the provided box is ${x * y} square meters.`)
+}
