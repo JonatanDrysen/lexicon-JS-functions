@@ -70,3 +70,14 @@ function convertDistance(distanceInKms) {
     const approxMiles = Math.floor(distanceInMiles)
     console.log(`${distanceInKms} kilometers is approximately ${approxMiles} miles.`)
 }
+
+function convertTempPrompt() {
+    const tempInC = prompt("Enter the temp in Celsius.", "0")
+    convertTemp(tempInC)
+}
+
+function convertTemp(tempInC) {
+    const tempInF = 9/5 * tempInC + 32
+    const approxTempF = Math.floor(tempInF)
+    console.log(`${tempInC} degrees Celsius is approximately ${approxTempF} degrees Fahrenheit.`)
+}
