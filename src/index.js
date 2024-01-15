@@ -59,3 +59,14 @@ function enterNamePrompt() {
 function greetNewName(firstName, lastName) {
     alert(`Greetings ${firstName} ${lastName}!`)
 }
+
+function convertDistancePrompt() {
+    const distanceInKms = prompt("Enter the distance in kilometers.", "0")
+    convertDistance(distanceInKms)
+}
+
+function convertDistance(distanceInKms) {
+    const distanceInMiles = distanceInKms / 1.60934
+    const approxMiles = Math.floor(distanceInMiles)
+    console.log(`${distanceInKms} kilometers is approximately ${approxMiles} miles.`)
+}
