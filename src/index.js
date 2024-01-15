@@ -34,6 +34,7 @@ function divideTwoNumbers(x, y) {
     console.log(`${x} divided by ${y} is ${x / y}`)
 }
 
+// works the same as example above, but simplified
 function findAreaPrompt() {
     const x = prompt("Enter the length of the horizontal side in meters.", "0")
     const y = prompt("Enter the length of the vertical side in meters.", "0")
@@ -44,6 +45,17 @@ function findAreaPrompt() {
     findArea(x, y)
 }
 
+// works the same as example above, but simplified
 function findArea(x, y) {
     console.log(`The area of the provided box is ${x * y} square meters.`)
+}
+
+function enterNamePrompt() {
+    const firstName = prompt("Enter your first name.", "John")
+    const lastName = prompt("Enter your last name.", "Doe")
+    greetNewName(firstName, lastName)
+}
+
+function greetNewName(firstName, lastName) {
+    alert(`Greetings ${firstName} ${lastName}!`)
 }
