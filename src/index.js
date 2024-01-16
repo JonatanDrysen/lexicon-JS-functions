@@ -106,3 +106,8 @@ function calculateAge(age) {
         alert("I'm sorry, where is your caretaker?")
     }
 }
+
+function calculateSum(arr) {
+    const sum = arr.reduce((accumulator, current) => accumulator + current, 0)
+    console.log(`total sum of ${arr} is ${sum}.`)  
+}
