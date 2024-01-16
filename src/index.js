@@ -111,3 +111,9 @@ function calculateSum(arr) {
     const sum = arr.reduce((accumulator, current) => accumulator + current, 0)
     console.log(`total sum of ${arr} is ${sum}.`)  
 }
+
+function showSkills(Person) {
+    const name = Person.Person.name
+    const skills = Person.Person.skills
+    console.log(`These are ${name}'s skills: ${skills}`)
+}
