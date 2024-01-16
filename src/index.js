@@ -87,3 +87,22 @@ function calculateMeanValue(values) {
     const mean = sum / values.length
     console.log(`The mean value of ${values} is ${mean}.`)
 }
+
+function calculateAgePrompt() {
+    const agePrompt = prompt("Welcome to Systembolaget! Enter your age.", "0")
+    calculateAge(parseInt(agePrompt))
+}
+
+function calculateAge(age) {
+    if(age <= 14) {
+        alert("Get outta here!")
+    } else if(age >= 15 && age <= 17) {
+        alert("Sorry, you're not old enough.")
+    } else if(age >= 18 && age <= 19) {
+        alert("Sorry, you must be at least 20, why don't you try a bar instead?")
+    } else if(age >= 20 && age <= 80) {
+        alert("Thank you! Welcome!")
+    } else if(age > 80) {
+        alert("I'm sorry, where is your caretaker?")
+    }
+}
